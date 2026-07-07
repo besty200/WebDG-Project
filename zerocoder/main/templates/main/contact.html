@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">Свяжитесь с нами</h1>
+    <div class="card shadow-sm p-4">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email адрес</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputText" class="form-label">Ваше сообщение</label>
+                <textarea class="form-control" id="exampleInputText" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Отправить</button>
+        </form>
+    </div>
+{% endblock %}
